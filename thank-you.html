@@ -1,0 +1,55 @@
+<!-- VERSION: v01 -->
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gracias — Casa Schédia</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/styles.css?v=01">
+<style>
+  .ty-hero{background:var(--charcoal);color:var(--cream);padding:5rem 0 3rem;text-align:center}
+  .ty-wrap{max-width:720px;margin:0 auto;padding:0 24px}
+  .ty-grid{display:grid;grid-template-columns:1fr 1fr;gap:2rem;margin:3rem 0}
+  .ty-card{background:var(--cream);border:1px solid var(--line);padding:1.6rem}
+  .booking-shell{border:1px solid var(--line);margin-top:1rem}
+  .booking-shell-header{background:var(--charcoal);color:var(--cream);padding:.9rem 1.2rem;border-bottom:3px solid var(--wood);font-weight:600;font-family:var(--font-mono);font-size:.8rem;letter-spacing:.08em;text-transform:uppercase}
+  .booking-fallback-note{font-size:.85rem;color:var(--grey);margin-top:.8rem}
+</style>
+</head>
+<body>
+<section class="ty-hero">
+  <div class="ty-wrap">
+    <p class="eyebrow" style="text-align:center">SOLICITUD RECIBIDA</p>
+    <h1>Gracias — ya tenemos tu información.</h1>
+    <p class="hero-sub" style="margin:0 auto">Un miembro del equipo de Casa Schédia va a revisar tu proyecto y te va a contactar en menos de 24 horas hábiles. Mientras tanto, puedes agendar una llamada directamente abajo.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="ty-wrap">
+    <div class="ty-grid">
+      <div class="ty-card">
+        <h3>Qué esperar en la llamada</h3>
+        <ul style="margin-top:.8rem;padding-left:1.1rem;color:var(--grey);font-size:.92rem;line-height:1.7">
+          <li>Dura entre 15 y 20 minutos.</li>
+          <li>Hablamos de tu proyecto, cantidades y timeline.</li>
+          <li>Sin presión — es para entender si encajamos.</li>
+        </ul>
+      </div>
+      <div class="ty-card">
+        <h3>Con quién vas a hablar</h3>
+        <p style="margin-top:.8rem;color:var(--grey);font-size:.92rem">[Nombre del contacto comercial]<br>Ventas B2B / Proyectos, Casa Schédia<br>[Línea de credibilidad — ej. años en manufactura de mobiliario]</p>
+      </div>
+    </div>
+
+    <div class="booking-shell">
+      <div class="booking-shell-header">Elige un horario</div>
+      <!-- Reemplazar [ID] por el link real de Cal.com o Google Calendar Appointment Schedule -->
+      <iframe src="https://cal.com/casa-schedia/cotizacion?embed=true" style="border:0" width="100%" height="640" loading="lazy" title="Agendar llamada"></iframe>
+    </div>
+    <p class="booking-fallback-note">¿No carga? <a href="https://cal.com/casa-schedia/cotizacion">Ábrela directo →</a></p>
+  </div>
+</section>
+</body>
+</html>
