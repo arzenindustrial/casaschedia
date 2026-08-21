@@ -21,8 +21,11 @@ h1{font-size:clamp(2rem,5vw,3.4rem)}
 h2{font-size:clamp(1.6rem,3.4vw,2.4rem);margin-bottom:2rem}
 h3{font-size:1.05rem;font-weight:700}
 .eyebrow{font-family:var(--font-mono);font-size:.72rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--wood);margin-bottom:.9rem}
-.lede{font-size:1.15rem;color:var(--grey);max-width:640px}
-.fine-note{font-size:.85rem;color:var(--grey);margin-top:1.2rem;font-style:italic}
+.lede{font-size:1.15rem;color:var(--grey);max-width:640px;text-align:justify;text-justify:inter-word}
+.fine-note{font-size:.85rem;color:var(--grey);margin-top:1.2rem;font-style:italic;text-align:justify}
+p{text-align:justify;text-justify:inter-word}
+.hero-sub,.eyebrow,h1,h2,h3,.trust-indicators,.btn,.evidence-table td,.form-grid label,.ti-label,.logo-text,.site-nav,.project-meta,.footer-inner p{text-align:left}
+.hero-sub{max-width:560px}
 
 /* Buttons */
 .btn{display:inline-block;padding:.85rem 1.6rem;border-radius:2px;font-weight:600;font-size:.95rem;letter-spacing:.01em;transition:all .15s ease;border:1px solid transparent}
@@ -63,10 +66,17 @@ h3{font-size:1.05rem;font-weight:700}
 /* Grids */
 .grid-4{display:grid;grid-template-columns:repeat(4,1fr);gap:1.5rem}
 .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem}
-.grid-tight .tag-card{padding:1.4rem;background:var(--cream);border:1px solid var(--line);font-weight:600;font-size:1rem}
-.card{background:var(--cream);border:1px solid var(--line)}
-.card-media{aspect-ratio:4/3;background-size:cover;background-position:center;background-color:#DFD8C9}
+.card{background:var(--cream);border:1px solid var(--line);transition:box-shadow .2s ease,transform .2s ease}
+.card:hover{box-shadow:0 10px 26px rgba(28,26,23,.1);transform:translateY(-2px)}
+.card-media{aspect-ratio:4/3;background-size:cover;background-position:center;background-color:#DFD8C9;position:relative}
 .card h3{padding:1rem 1.1rem 1.3rem}
+
+.audience-card{background:var(--charcoal);border:1px solid var(--charcoal);overflow:hidden;transition:box-shadow .2s ease,transform .2s ease}
+.audience-card:hover{box-shadow:0 10px 26px rgba(28,26,23,.18);transform:translateY(-2px)}
+.audience-card .card-media{aspect-ratio:5/4;background-color:#3A362F}
+.audience-body{padding:1.2rem 1.2rem 1.4rem;border-top:3px solid var(--wood)}
+.audience-num{display:block;font-family:var(--font-mono);font-size:.72rem;letter-spacing:.12em;color:var(--wood);font-weight:600;margin-bottom:.5rem}
+.audience-body h3{color:var(--cream);font-size:1rem}
 .project-card{background:var(--cream);border:1px solid var(--line)}
 .project-meta{padding:.9rem 1rem;font-size:.85rem;color:var(--grey)}
 
