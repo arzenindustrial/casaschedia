@@ -1,4 +1,4 @@
-/* VERSION: v01 */
+/* VERSION: v03 */
 :root{
   --charcoal:#1C1A17;
   --wood:#A9683D;
@@ -124,4 +124,6 @@ p{text-align:justify;text-justify:inter-word}
   .process-steps{grid-template-columns:1fr 1fr}
   .form-grid{grid-template-columns:1fr}
   .header-cta{display:none}
+  .header-catalog{display:none}
 }
+.header-catalog{margin-right:12px}
