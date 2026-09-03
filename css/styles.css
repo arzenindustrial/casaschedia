@@ -1,4 +1,4 @@
-/* VERSION: v04 */
+/* VERSION: v05 */
 :root{
   --charcoal:#1C1A17;
   --wood:#A9683D;
@@ -98,21 +98,17 @@ p{text-align:justify;text-justify:inter-word}
 .roadmap-track{position:absolute;top:1.9rem;left:22px;right:22px;height:2px;background:var(--line);z-index:0}
 .roadmap-fill{position:absolute;inset:0;width:0;background:var(--wood);transition:width 1.8s cubic-bezier(.22,.9,.3,1)}
 .roadmap.in-view .roadmap-fill{width:100%}
-.roadmap-steps{list-style:none;display:grid;grid-template-columns:repeat(9,1fr);gap:.6rem;position:relative;z-index:1;counter-reset:step}
+.roadmap-steps{list-style:none;display:grid;grid-template-columns:repeat(5,1fr);gap:.6rem;position:relative;z-index:1;counter-reset:step}
 .roadmap-step{display:flex;flex-direction:column;align-items:center;text-align:center;gap:.9rem}
 .roadmap-node{width:44px;height:44px;border-radius:50%;background:var(--cream);border:2px solid var(--line);display:flex;align-items:center;justify-content:center;font-family:var(--font-mono);font-weight:600;font-size:.85rem;color:var(--grey);transition:background .35s ease,border-color .35s ease,color .35s ease,transform .35s ease;transform:scale(.9)}
-.roadmap-label{font-size:.8rem;font-weight:600;line-height:1.3;max-width:110px}
+.roadmap-label{font-size:.85rem;font-weight:600;line-height:1.3;max-width:140px}
 .roadmap-label em{font-style:normal;color:var(--grey);font-weight:500}
 .roadmap.in-view .roadmap-node{background:var(--wood);border-color:var(--wood);color:var(--cream);transform:scale(1)}
 .roadmap.in-view .roadmap-step:nth-child(1) .roadmap-node{transition-delay:.1s}
-.roadmap.in-view .roadmap-step:nth-child(2) .roadmap-node{transition-delay:.28s}
-.roadmap.in-view .roadmap-step:nth-child(3) .roadmap-node{transition-delay:.46s}
-.roadmap.in-view .roadmap-step:nth-child(4) .roadmap-node{transition-delay:.64s}
-.roadmap.in-view .roadmap-step:nth-child(5) .roadmap-node{transition-delay:.82s}
-.roadmap.in-view .roadmap-step:nth-child(6) .roadmap-node{transition-delay:1.0s}
-.roadmap.in-view .roadmap-step:nth-child(7) .roadmap-node{transition-delay:1.18s}
-.roadmap.in-view .roadmap-step:nth-child(8) .roadmap-node{transition-delay:1.36s}
-.roadmap.in-view .roadmap-step:nth-child(9) .roadmap-node{transition-delay:1.54s}
+.roadmap.in-view .roadmap-step:nth-child(2) .roadmap-node{transition-delay:.34s}
+.roadmap.in-view .roadmap-step:nth-child(3) .roadmap-node{transition-delay:.58s}
+.roadmap.in-view .roadmap-step:nth-child(4) .roadmap-node{transition-delay:.82s}
+.roadmap.in-view .roadmap-step:nth-child(5) .roadmap-node{transition-delay:1.06s}
 @media (max-width:860px){
   .roadmap-track{display:none}
   .roadmap-steps{grid-template-columns:1fr;gap:0;justify-items:start}
