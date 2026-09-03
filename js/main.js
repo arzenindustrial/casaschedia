@@ -1,4 +1,4 @@
-// VERSION: v01
+// VERSION: v02
 document.addEventListener('DOMContentLoaded', function () {
   // Scroll popup — once per session, at 25% scroll
   var popup = document.getElementById('scroll-popup');
@@ -45,5 +45,21 @@ document.addEventListener('DOMContentLoaded', function () {
       var open = nav.classList.toggle('open');
       toggle.setAttribute('aria-expanded', open);
     });
+  }
+
+  // Roadmap — animate in once when scrolled into view
+  var roadmap = document.getElementById('roadmap');
+  if (roadmap && 'IntersectionObserver' in window) {
+    var roadmapObserver = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          roadmap.classList.add('in-view');
+          roadmapObserver.unobserve(roadmap);
+        }
+      });
+    }, { threshold: 0.35 });
+    roadmapObserver.observe(roadmap);
+  } else if (roadmap) {
+    roadmap.classList.add('in-view');
   }
 });
