@@ -1,4 +1,4 @@
-<!-- VERSION: v03 -->
+<!-- VERSION: v04 -->
 <!DOCTYPE html>
 <html lang="es-MX">
 <head>
@@ -9,7 +9,7 @@
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/styles.css?v=03">
+<link rel="stylesheet" href="css/styles.css?v=04">
 </head>
 <body>
 
@@ -132,7 +132,6 @@
       <li><span class="spec-num">05</span> Control de calidad por pieza</li>
       <li><span class="spec-num">06</span> Entrega en el corredor Tabasco–Campeche–Yucatán–Quintana Roo</li>
     </ul>
-    <p class="fine-note">Tiempos de entrega y volumen mensual se confirman por proyecto — [pendiente: cifra real de capacidad del taller].</p>
   </div>
 </section>
 
@@ -158,17 +157,20 @@
   <div class="wrap">
     <p class="eyebrow">05 — CÓMO FUNCIONA</p>
     <h2>Del brief a la entrega.</h2>
-    <ol class="process-steps">
-      <li><span>01</span>Brief</li>
-      <li><span>02</span>Diseño / cotización</li>
-      <li><span>03</span>Prototipo (si aplica)</li>
-      <li><span>04</span>Anticipo 50%</li>
-      <li><span>05</span>Producción con updates</li>
-      <li><span>06</span>Control de calidad</li>
-      <li><span>07</span>Entrega</li>
-      <li><span>08</span>Saldo</li>
-      <li><span>09</span>Seguimiento post-entrega</li>
-    </ol>
+    <div class="roadmap" id="roadmap">
+      <div class="roadmap-track"><div class="roadmap-fill"></div></div>
+      <ol class="roadmap-steps">
+        <li class="roadmap-step"><span class="roadmap-node">01</span><p class="roadmap-label">Brief</p></li>
+        <li class="roadmap-step"><span class="roadmap-node">02</span><p class="roadmap-label">Diseño / cotización</p></li>
+        <li class="roadmap-step"><span class="roadmap-node">03</span><p class="roadmap-label">Prototipo <em>(si aplica)</em></p></li>
+        <li class="roadmap-step"><span class="roadmap-node">04</span><p class="roadmap-label">Anticipo 50%</p></li>
+        <li class="roadmap-step"><span class="roadmap-node">05</span><p class="roadmap-label">Producción con updates</p></li>
+        <li class="roadmap-step"><span class="roadmap-node">06</span><p class="roadmap-label">Control de calidad</p></li>
+        <li class="roadmap-step"><span class="roadmap-node">07</span><p class="roadmap-label">Entrega</p></li>
+        <li class="roadmap-step"><span class="roadmap-node">08</span><p class="roadmap-label">Saldo</p></li>
+        <li class="roadmap-step"><span class="roadmap-node">09</span><p class="roadmap-label">Seguimiento post-entrega</p></li>
+      </ol>
+    </div>
   </div>
 </section>
 
@@ -191,7 +193,6 @@
         <p class="project-meta">Sala principal — seccional a medida, tela gris grafito</p>
       </div>
     </div>
-    <p class="fine-note">Piezas de referencia de producción — sustituir por proyectos instalados con cliente conforme se documenten.</p>
   </div>
 </section>
 
@@ -259,6 +260,6 @@
   <a href="#cotizar" class="btn btn-amber btn-small">Solicitar Cotización</a>
 </div>
 
-<script src="js/main.js?v=01"></script>
+<script src="js/main.js?v=02"></script>
 </body>
 </html>
